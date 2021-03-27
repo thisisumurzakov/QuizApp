@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="height: 100%">
     <v-container>
       <v-card
           elevation="2"
@@ -23,6 +23,9 @@
             color="warning"
             label="Your name"
           />
+        </v-card-actions>
+        <v-card-actions class="d-flex justify-end" style="width: 100%">
+          <v-btn>Join</v-btn>
         </v-card-actions>
       </v-card>
     </v-container>

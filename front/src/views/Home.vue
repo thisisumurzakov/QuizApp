@@ -32,39 +32,4 @@ export default {
 
 <style scoped>
 
-.custom-class {
-  transition: 0.5s;
-}
-
-.custom-class:hover {
-  transform: rotate(360deg);
-}
-
-.custom-class:hover .button-icon {
-  display: block;
-}
-
-
-.custom-class:hover .button-text {
-  display: none;
-}
-
-.custom-class .button-icon {
-  display: none;
-}
-
-.custom-class .button-icon i {
-  color: #fff;
-  font-size: 150px;
-}
-
-
-.custom-class span {
-  font-size: 20px !important;
-  transition: 0.5s;
-}
-
-.custom-class span {
-  font-size: 30px !important;
-}
 </style>

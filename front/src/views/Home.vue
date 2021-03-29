@@ -6,7 +6,7 @@
             title="Create quiz"
             color="warning"
             inner-icon="mdi-plus"
-            address=""
+            address="/blet"
         />
         <bg-button
             title="Join to quiz"

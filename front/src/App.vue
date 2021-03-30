@@ -1,5 +1,5 @@
 <template>
-  <v-app style="background: #424242">
+  <v-app style="background: #212121">
     <v-main>
       <transition name="pageTransition" mode="out-in">
         <router-view/>

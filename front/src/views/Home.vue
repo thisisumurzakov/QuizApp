@@ -1,26 +1,7 @@
 <template>
-  <div style="height: 100%; position: relative;">
-    <v-carousel
-        :show-arrows="false"
-        cycle
-        interval="3000"
-        hide-delimiters
-        style="height: 100%;"
-    >
-      <v-carousel-item
-          v-for="color in colors"
-          :key="color"
-          :style="{
-            height: '100%',
-            background: color + ' no-repeat fixed center',
-            backgroundSize:'cover'}"
-      >
-
-      </v-carousel-item>
-    </v-carousel>
     <div
         class="d-flex align-center"
-        style="height: 100%; width: 100%; position: absolute;top: 0"
+        style="height: 100%; width: 100%;"
     >
       <v-container>
         <v-row align-content="center">
@@ -28,7 +9,7 @@
               title="Create quiz"
               color="warning"
               inner-icon="mdi-plus"
-              address="/blet"
+              address="/"
           />
           <bg-button
               title="Join to quiz"
@@ -38,7 +19,6 @@
           />
         </v-row>
       </v-container>
-    </div>
   </div>
 </template>
 

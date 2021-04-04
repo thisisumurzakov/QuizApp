@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import JoinPage from '../views/JoinPage'
+import QuizMainPage from '@/views/QuizMainPage';
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/join',
     name: 'Join',
     component: JoinPage
+  },
+  {
+    path: '/quiz/:quizId/home',
+    name: 'QuizMainPage',
+    component: QuizMainPage
   }
 ]
 

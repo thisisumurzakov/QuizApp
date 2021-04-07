@@ -3,12 +3,12 @@
         class="d-flex align-center"
         style="height: 100%; width: 100%;"
     >
-      <particles style="top: 0;bottom: 0;left: 0;right: 0; position:absolute; " />
+      <particles style="top: 0;bottom: 0;left: 0;right: 0; position:absolute; background: #fff;" />
       <v-container>
         <v-row align-content="center">
 
           <bg-button
-              title="Join to quiz"
+              title="Join quiz"
               color="black"
               address="/join"
               :text-color="false"
@@ -16,7 +16,7 @@
           <bg-button
               :text-color="true"
               title="Create quiz"
-              color="yellow accent-4"
+              color="#fcd82a"
               address="/"
           />
         </v-row>
@@ -47,7 +47,4 @@ export default {
 </script>
 
 <style scoped>
-.v-btn:last-child span{
-  color: black !important;
-}
 </style>

@@ -5,7 +5,11 @@
       class="justify-center d-flex"
   >
     <v-btn
-        class="bg-btn display-1 button-custom-class white--text"
+        :class="{
+          'bg-btn display-1 button-custom-class':true,
+          'black--text': textColor,
+          'white--text': !textColor
+        }"
         height="50px"
         width="220px"
         :color="color"
@@ -19,7 +23,7 @@
 
 <script>
 export default {
-  props: ['color', 'title', 'address'],
+  props: ['color', 'title', 'address', 'textColor'],
   name: "bgButton"
 }
 </script>

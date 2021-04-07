@@ -11,8 +11,10 @@
               title="Join to quiz"
               color="black"
               address="/join"
+              :text-color="false"
           />
           <bg-button
+              :text-color="true"
               title="Create quiz"
               color="yellow accent-4"
               address="/"

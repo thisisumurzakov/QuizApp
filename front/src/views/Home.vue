@@ -6,17 +6,16 @@
       <particles style="top: 0;bottom: 0;left: 0;right: 0; position:absolute; " />
       <v-container>
         <v-row align-content="center">
-          <bg-button
-              title="Create quiz"
-              color="warning"
-              inner-icon="mdi-plus"
-              address="/"
-          />
+
           <bg-button
               title="Join to quiz"
-              color="success"
-              inner-icon="mdi-play"
+              color="black"
               address="/join"
+          />
+          <bg-button
+              title="Create quiz"
+              color="yellow accent-4"
+              address="/"
           />
         </v-row>
       </v-container>
@@ -46,5 +45,7 @@ export default {
 </script>
 
 <style scoped>
-
+.v-btn:last-child span{
+  color: black !important;
+}
 </style>

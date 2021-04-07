@@ -6,6 +6,10 @@ import vuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
 
+let name = localStorage.getItem('name')
+
+store.commit('setName', name)
+
 new Vue({
   router,
   store,

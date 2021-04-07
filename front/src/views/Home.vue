@@ -1,48 +1,31 @@
 <template>
-  <div style="height: 100%; position: relative;">
-    <v-carousel
-        :show-arrows="false"
-        cycle
-        interval="3000"
-        hide-delimiters
-        style="height: 100%;"
-    >
-      <v-carousel-item
-          v-for="color in colors"
-          :key="color"
-          :style="{
-            height: '100%',
-            background: color + ' no-repeat fixed center',
-            backgroundSize:'cover'}"
-      >
-
-      </v-carousel-item>
-    </v-carousel>
     <div
         class="d-flex align-center"
-        style="height: 100%; width: 100%; position: absolute;top: 0"
+        style="height: 100%; width: 100%;"
     >
+      <particles style="top: 0;bottom: 0;left: 0;right: 0; position:absolute; " />
       <v-container>
         <v-row align-content="center">
-          <bg-button
-              title="Create quiz"
-              color="warning"
-              inner-icon="mdi-plus"
-              address="/blet"
-          />
+
           <bg-button
               title="Join to quiz"
-              color="success"
-              inner-icon="mdi-play"
+              color="black"
               address="/join"
+              :text-color="false"
+          />
+          <bg-button
+              :text-color="true"
+              title="Create quiz"
+              color="yellow accent-4"
+              address="/"
           />
         </v-row>
       </v-container>
-    </div>
   </div>
 </template>
 
 <script>
+import particles from '@/components/particles';
 import bgButton from '@/components/bgButton';
 
 export default {
@@ -56,12 +39,15 @@ export default {
     ],
   }),
   components: {
-    bgButton
+    bgButton,
+    particles
   },
   name: 'Home'
 }
 </script>
 
 <style scoped>
-
+.v-btn:last-child span{
+  color: black !important;
+}
 </style>

@@ -27,7 +27,7 @@
           />
         </v-card-actions>
         <v-card-actions class="d-flex justify-end" style="width: 100%">
-          <v-btn :to="`/quiz/${roomID}/home`">Join</v-btn>
+          <v-btn @click="join">Join</v-btn>
         </v-card-actions>
       </v-card>
     </v-container>
@@ -40,7 +40,13 @@ export default {
   data: () => ({
     roomID: '',
     name: ''
-  })
+  }),
+  methods: {
+    async join() {
+      await this.$store.dispatch('join', {roomID: this.roomID, name: this.name})
+      await this.$router.push(`/quiz/${this.roomID}/home`)
+    }
+  }
 }
 </script>
 

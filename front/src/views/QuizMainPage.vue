@@ -1,8 +1,9 @@
 <template>
   <v-container>
-    <v-card dark class="elevation-10 d-flex justify-center align-center flex-column">
-      <v-card-title class="display-3">
-        {{ title }}
+    <v-card dark class="elevation-10 d-flex flex-column">
+      <v-card-title class="d-flex justify-space-between">
+        <span class="display-3">{{ title }}</span>
+        <span class="display-1">{{ joinBtn.name.toUpperCase() }}</span>
       </v-card-title>
       <v-card-subtitle class="display-1">
         {{ description }}
@@ -16,7 +17,7 @@
                 Name
               </th>
               <th class="text-left">
-                Points
+                {{ url }}
               </th>
             </tr>
             </thead>
@@ -32,6 +33,9 @@
           </template>
         </v-simple-table>
       </v-card>
+      <v-card-actions class="d-flex justify-end">
+        <v-btn v-if="joinBtn.visible" :to="`/quiz/${url}/start`">Join</v-btn>
+      </v-card-actions>
     </v-card>
   </v-container>
 </template>
@@ -52,7 +56,16 @@ export default {
         points: 11
       }
     ]
-  })
+  }),
+  computed: {
+    joinBtn() {
+      let name = this.$store.getters.getName
+      return {name, visible: !!name}
+    },
+    url() {
+      return this.$route.path.split('/')[2]
+    }
+  }
 }
 </script>
 

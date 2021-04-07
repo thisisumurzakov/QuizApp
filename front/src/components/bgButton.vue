@@ -1,9 +1,4 @@
 <template>
-  <v-col
-      md="12"
-      sm="12"
-      class="justify-center d-flex"
-  >
     <v-btn
         :class="{
           'bg-btn display-1 button-custom-class':true,
@@ -15,10 +10,10 @@
         :color="color"
         :to="address"
         style="font-size: 20px !important; font-weight: bold;"
+        v-ripple="{class: 'white--text'}"
     >
         {{ title }}
     </v-btn>
-  </v-col>
 </template>
 
 <script>
@@ -29,5 +24,7 @@ export default {
 </script>
 
 <style scoped>
-
+.button-custom-class.theme--light.v-btn--active:hover::before, .button-custom-class.theme--light.v-btn--active::before {
+  opacity: 0; /* button background color glitch solution */
+}
 </style>

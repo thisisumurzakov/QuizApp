@@ -2,6 +2,12 @@
   <v-container>
     <v-card class="pa-2" dark>
       <v-stepper @change="emm" color="primary" non-linear v-model="stepper">
+        <v-slide-y-transition>
+          <v-stepper-header v-show="lol" style="height: 100%">
+            <v-stepper-step color="primary" editable :step="i" v-for="i in quiz.length" :key="i">
+            </v-stepper-step>
+          </v-stepper-header>
+        </v-slide-y-transition>
         <v-stepper-items>
           <v-stepper-content :step="i" v-for="i in quiz.length" :key="i">
             <v-card class="pa-10 d-flex flex-column justify-start">
@@ -24,12 +30,9 @@
             </v-card>
           </v-stepper-content>
         </v-stepper-items>
-        <v-stepper-header style="height: 100%">
-          <v-stepper-step color="primary" editable :step="i" v-for="i in quiz.length" :key="i">
-          </v-stepper-step>
-        </v-stepper-header>
       </v-stepper>
     </v-card>
+    <v-btn @click="lol = !lol">dsa</v-btn>
   </v-container>
 </template>
 
@@ -37,6 +40,7 @@
 export default {
   name: "QuizStart",
   data: () => ({
+    lol: true,
     stepper: 1,
     question: 'Nmadur',
     quiz: [
@@ -63,7 +67,416 @@ export default {
           ]
         ],
         choosenAnswer: 0
-      }
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Nmadur',
+        answers: [
+          [
+            'A',
+            'B',
+            'C',
+            'D'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+      {
+        title: 'Rudamn',
+        answers: [
+          [
+            'E',
+            'F',
+            'G',
+            'H'
+          ]
+        ],
+        choosenAnswer: 0
+      },
+
     ]
   }),
   methods: {
@@ -84,5 +497,8 @@ export default {
 .v-application--is-ltr .v-stepper__step__step {
   margin-right: 4px!important;
   margin-left: 4px!important;
+}
+.v-stepper__step {
+  padding: 12px!important;
 }
 </style>

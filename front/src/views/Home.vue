@@ -3,10 +3,10 @@
         class="d-flex align-center"
         style="height: 100%; width: 100%;"
     >
-      <particles style="width: 100vw; height: 100vh; position:absolute; background: #fff;" />
+      <particles style="top: 0;bottom: 0;left: 0;right: 0; position:absolute; background: #fff;z-index: 0" />
       <v-container>
         <v-row align="center" justify="center" class="flex-column">
-          <img src="../assets/quiz.png" alt="">
+          <img src="@/assets/quiz.png" alt="" style="z-index: 1">
           <bg-button
               title="Join quiz"
               color="black"

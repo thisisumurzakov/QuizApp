@@ -1,6 +1,6 @@
 <template>
   <div class="particles">
-    <div id="particles-js"></div>
+    <div id="particles-js" style="top: 0;bottom: 0;left: 0;right: 0; position:absolute"></div>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
             "anim": {"enable": false, "speed": 1, "opacity_min": 0.1, "sync": false}
           },
           "size": {"value": 3, "random": true, "anim": {"enable": false, "speed": 40, "size_min": 0.1, "sync": false}},
-          "line_linked": {"enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1},
+          "line_linked": {"enable": true, "distance": 150, "color": "#000000", "opacity": 0.4, "width": 1},
           "move": {
             "enable": true,
             "speed": 6,

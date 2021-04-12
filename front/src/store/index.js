@@ -19,8 +19,6 @@ export default new Vuex.Store({
   actions: {
     async join({ commit }, payload) {
       commit('setRoomID', payload.roomID)
-      commit('setName', payload.name)
-      await localStorage.setItem('name', payload.name)
       await localStorage.setItem('roomID', payload.roomID)
     }
   },

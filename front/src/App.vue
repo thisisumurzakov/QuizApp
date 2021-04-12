@@ -20,16 +20,4 @@ export default {
 </script>
 
 <style scoped>
-.pageTransition-enter {
-  opacity: 0;
-}
-.pageTransition-enter-active {
-  transition: opacity 0.2s;
-}
-.pageTransition-leave-active {
-  transition: opacity 0.2s;
-}
-.pageTransition-leave-to {
-  opacity: 0;
-}
 </style>

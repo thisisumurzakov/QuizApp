@@ -14,8 +14,8 @@
           />
         </v-stepper-header>
         <v-toolbar dense class="hidden-sm-and-up">
-          <v-spacer />
-          <v-app-bar-nav-icon @click="lol = !lol" />
+          <v-spacer/>
+          <v-app-bar-nav-icon @click="lol = !lol"/>
         </v-toolbar>
         <v-stepper-items>
           <v-stepper-content :step="i" v-for="i in quiz.length" :key="i">
@@ -33,12 +33,16 @@
                 </v-radio-group>
               </div>
             </v-card>
-            <v-progress-circular
-                :width="3"
+            <v-card
+                class="d-flex justify-center pa-10"
                 v-else
-                color="red"
-                indeterminate
-            ></v-progress-circular>
+            >
+              <v-progress-circular
+                  :width="3"
+                  color="red"
+                  indeterminate
+              ></v-progress-circular>
+            </v-card>
           </v-stepper-content>
         </v-stepper-items>
       </v-stepper>
@@ -107,6 +111,7 @@ export default {
   overflow: hidden
   max-height: 400px
   transition: max-height .5s
+
 .animation
   max-height: 0
 

@@ -1,4 +1,6 @@
 /server/db.sqlite3
+/server/quiz/__pychache__
+/server/quizapp/__pychache__
 .idea
 
 /front/.DS_Store
